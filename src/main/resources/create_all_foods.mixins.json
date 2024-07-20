@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.drd.create_all_foods.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "CreateAllTheFoods.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
