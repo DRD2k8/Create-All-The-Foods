@@ -1,6 +1,7 @@
 package com.drd.create_all_foods.datagen.loot;
 
 import com.drd.create_all_foods.init.ModBlocks;
+import com.drd.create_all_foods.init.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
@@ -30,6 +31,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSlabItemTable(ModBlocks.CINNAMON_SLAB.get()));
         this.add(ModBlocks.CINNAMON_DOOR.get(), block ->
                 createDoorTable(ModBlocks.CINNAMON_DOOR.get()));
+        this.add(ModBlocks.CINNAMON_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CINNAMON_SIGN.get()));
+        this.add(ModBlocks.CINNAMON_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CINNAMON_SIGN.get()));
+        this.add(ModBlocks.CINNAMON_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CINNAMON_HANGING_SIGN.get()));
+        this.add(ModBlocks.CINNAMON_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CINNAMON_HANGING_SIGN.get()));
         this.add(ModBlocks.CINNAMON_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CINNAMON_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModBlocks.CINNAMON_SAPLING.get());

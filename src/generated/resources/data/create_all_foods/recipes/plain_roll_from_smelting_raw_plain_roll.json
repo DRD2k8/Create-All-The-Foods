@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "plain_roll",
+  "ingredient": {
+    "item": "create_all_foods:raw_plain_roll"
+  },
+  "result": "create_all_foods:plain_roll"
+}

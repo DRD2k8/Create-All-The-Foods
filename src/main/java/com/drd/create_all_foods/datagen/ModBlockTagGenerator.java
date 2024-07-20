@@ -60,5 +60,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.CINNAMON_BUTTON.get());
+
+        this.tag(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.CINNAMON_SIGN.get());
+
+        this.tag(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.CINNAMON_WALL_SIGN.get());
+
+        this.tag(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.CINNAMON_HANGING_SIGN.get());
+
+        this.tag(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.CINNAMON_WALL_HANGING_SIGN.get());
     }
 }

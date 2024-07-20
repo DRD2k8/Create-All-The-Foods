@@ -20,6 +20,9 @@ public class ModItemModelGenerator extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.CINNAMON);
+        simpleItem(ModItems.PLAIN_ROLL);
+        simpleItem(ModItems.RAW_PLAIN_ROLL);
+        simpleItem(ModItems.CINNAMON_ROLL);
         simpleBlockItem(ModBlocks.CINNAMON_LOG);
         simpleBlockItem(ModBlocks.CINNAMON_WOOD);
         simpleBlockItem(ModBlocks.STRIPPED_CINNAMON_LOG);
@@ -32,6 +35,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         trapdoorItem(ModBlocks.CINNAMON_TRAPDOOR);
         simpleBlockItem(ModBlocks.CINNAMON_PRESSURE_PLATE);
         blockWithInventoryItem(ModBlocks.CINNAMON_BUTTON);
+        simpleItem(ModItems.CINNAMON_SIGN);
+        simpleItem(ModItems.CINNAMON_HANGING_SIGN);
         simplerBlockItem(ModBlocks.CINNAMON_SAPLING);
     }
 

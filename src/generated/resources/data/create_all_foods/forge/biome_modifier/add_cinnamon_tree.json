@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#create_all_foods:is_cinnamon_tree_spawnable_on",
+  "features": "create_all_foods:cinnamon_tree",
+  "step": "vegetal_decoration"
+}

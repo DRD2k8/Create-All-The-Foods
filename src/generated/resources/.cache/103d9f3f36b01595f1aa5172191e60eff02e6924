@@ -1,2 +1,4 @@
-// 1.20.1	2024-07-20T11:01:48.713429	Registries
+// 1.20.1	2024-07-20T15:45:25.3503836	Registries
+3add6f77209423bd0097e70cce90d84f10fb6406 data/create_all_foods/forge/biome_modifier/add_cinnamon_tree.json
 0c43c42219c3b60f027c669de2a56a4c0a0ce352 data/create_all_foods/worldgen/configured_feature/cinnamon_tree.json
+cad3ef78b4921d236bfbc965b2ce3311473cbcb3 data/create_all_foods/worldgen/placed_feature/cinnamon_tree.json

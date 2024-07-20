@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_all_foods:plain_roll"
+    },
+    {
+      "tag": "forge:cinnamon"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:cinnamon_roll"
+    }
+  ]
+}

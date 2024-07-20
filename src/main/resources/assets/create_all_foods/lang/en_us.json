@@ -12,9 +12,16 @@
   "block.create_all_foods.cinnamon_trapdoor": "Cinnamon Trapdoor",
   "block.create_all_foods.cinnamon_pressure_plate": "Cinnamon Pressure Plate",
   "block.create_all_foods.cinnamon_button": "Cinnamon Button",
+  "block.create_all_foods.cinnamon_sign": "Cinnamon Sign",
+  "block.create_all_foods.cinnamon_wall_sign": "Cinnamon Wall Sign",
+  "block.create_all_foods.cinnamon_hanging_sign": "Cinnamon Hanging Sign",
+  "block.create_all_foods.cinnamon_wall_hanging_sign": "Cinnamon Wall Hanging Sign",
   "block.create_all_foods.cinnamon_leaves": "Cinnamon Leaves",
   "block.create_all_foods.cinnamon_sapling": "Cinnamon Sapling",
   "item.create_all_foods.cinnamon": "Cinnamon",
+  "item.create_all_foods.raw_plain_roll": "Raw Plain Roll",
+  "item.create_all_foods.plain_roll": "Plain Roll",
+  "item.create_all_foods.cinnamon_roll": "Cinnamon Roll",
 
   "itemGroup.create_all_foods": "Create: All the Foods"
 }

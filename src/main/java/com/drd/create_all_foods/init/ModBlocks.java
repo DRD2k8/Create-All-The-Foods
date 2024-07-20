@@ -1,10 +1,10 @@
 package com.drd.create_all_foods.init;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
-import com.drd.create_all_foods.block.CinnamonWoodBlock;
+import com.drd.create_all_foods.block.*;
+import com.drd.create_all_foods.util.ModWoodTypes;
 import com.drd.create_all_foods.worldgen.tree.CinnamonTreeGrower;
 import net.minecraft.core.Direction;
-import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -54,6 +53,14 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY));
     public static final RegistryObject<Block> CINNAMON_BUTTON = registerBlock("cinnamon_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY, 30, true));
+    public static final RegistryObject<Block> CINNAMON_SIGN = BLOCKS.register("cinnamon_sign",
+            () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_SIGN), ModWoodTypes.CINNAMON));
+    public static final RegistryObject<Block> CINNAMON_WALL_SIGN = BLOCKS.register("cinnamon_wall_sign",
+            () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_WALL_SIGN), ModWoodTypes.CINNAMON));
+    public static final RegistryObject<Block> CINNAMON_HANGING_SIGN = BLOCKS.register("cinnamon_hanging_sign",
+            () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_HANGING_SIGN), ModWoodTypes.CINNAMON));
+    public static final RegistryObject<Block> CINNAMON_WALL_HANGING_SIGN = BLOCKS.register("cinnamon_wall_hanging_sign",
+            () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_WALL_HANGING_SIGN), ModWoodTypes.CINNAMON));
     public static final RegistryObject<Block> CINNAMON_LEAVES = registerBlock("cinnamon_leaves",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.CHERRY_LEAVES)));
     public static final RegistryObject<Block> CINNAMON_SAPLING = registerBlock("cinnamon_sapling",

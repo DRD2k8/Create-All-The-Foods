@@ -1,13 +1,21 @@
 package com.drd.create_all_foods.datagen;
 
+import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
+import com.drd.create_all_foods.init.ModItems;
+import com.simibubi.create.AllItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
@@ -93,5 +101,57 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .requires(ModBlocks.CINNAMON_PLANKS.get())
                 .unlockedBy(getHasName(ModBlocks.CINNAMON_PLANKS.get()), has(ModBlocks.CINNAMON_PLANKS.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.CINNAMON_SIGN.get(), 3)
+                .pattern("###")
+                .pattern("###")
+                .pattern(" X ")
+                .define('#', ModBlocks.CINNAMON_PLANKS.get())
+                .define('X', Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModBlocks.CINNAMON_PLANKS.get()), has(ModBlocks.CINNAMON_PLANKS.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Tags.Items.RODS_WOODEN))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.CINNAMON_HANGING_SIGN.get(), 6)
+                .pattern("X X")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.STRIPPED_CINNAMON_LOG.get())
+                .define('X', Items.CHAIN)
+                .unlockedBy(getHasName(ModBlocks.CINNAMON_PLANKS.get()), has(ModBlocks.CINNAMON_PLANKS.get()))
+                .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_PLAIN_ROLL.get())
+                .requires(Items.SUGAR)
+                .requires(AllItems.DOUGH)
+                .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR))
+                .unlockedBy(getHasName(AllItems.DOUGH), has(AllItems.DOUGH))
+                .save(consumer);
+
+        oreSmelting(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
+        oreSmoking(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
+        oreCampfireCooking(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
+    }
+
+    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+    }
+
+    protected static void oreSmoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smoking");
+    }
+
+    protected static void oreCampfireCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.CAMPFIRE_COOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_campfire_cooking");
+    }
+
+    protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+        for(ItemLike itemlike : pIngredients) {
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult,
+                            pExperience, pCookingTime, pCookingSerializer)
+                    .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+                    .save(pFinishedRecipeConsumer,  CreateAllTheFoods.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        }
     }
 }

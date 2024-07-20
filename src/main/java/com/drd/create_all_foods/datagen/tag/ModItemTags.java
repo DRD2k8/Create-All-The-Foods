@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class ModItemTags {
     public static final TagKey<Item> CINNAMON_LOGS = tag(CreateAllTheFoods.MOD_ID, "cinnamon_logs");
+    public static final TagKey<Item> CINNAMON = tag("forge", "cinnamon");
 
     private static TagKey<Item> tag(String modid, String name) {
         return ItemTags.create(new ResourceLocation(modid, name));

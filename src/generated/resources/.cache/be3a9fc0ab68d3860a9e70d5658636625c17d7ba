@@ -1,10 +1,14 @@
-// 1.20.1	2024-07-20T14:33:33.8493743	Tags for minecraft:block mod id create_all_foods
+// 1.20.1	2024-07-20T16:42:47.7218863	Tags for minecraft:block mod id create_all_foods
 dc59ed64bdfb3aee536b47be3d69dd70102b9dc9 data/create_all_foods/tags/blocks/cinnamon_logs.json
+6b24b96fb8f75271f66286e72c9e37017c0596d2 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 84154562b9c62fe9de419bf3485e9f2d825f6d20 data/minecraft/tags/blocks/fence_gates.json
 a885eb8584b81f42893f033bef79a7b0d152abe6 data/minecraft/tags/blocks/leaves.json
 3f2e59d35391e15c834d2c95a8f7d553a75c2861 data/minecraft/tags/blocks/logs_that_burn.json
 08ff28ac3dc1a740b38eca983d3d4a2294df911e data/minecraft/tags/blocks/planks.json
 a9cc61306ca86912b1c090fb4b030e4d31942c95 data/minecraft/tags/blocks/saplings.json
+6f230d1ac0e60d8ad71797a6c7bc814e13f10109 data/minecraft/tags/blocks/standing_signs.json
+61edacec82cf397334b9f6151fbe038cdf114572 data/minecraft/tags/blocks/wall_hanging_signs.json
+47156ef8a6aaf711c67c1dc0d75ed1d957d261e3 data/minecraft/tags/blocks/wall_signs.json
 06c255a2cef22a63c6567d87f7850f40da8245af data/minecraft/tags/blocks/wooden_buttons.json
 4812ec3d2a25361836c0df6e590616cdbc0db204 data/minecraft/tags/blocks/wooden_doors.json
 1be73f007e3ef38d15d107e96a39d208b0f74912 data/minecraft/tags/blocks/wooden_fences.json

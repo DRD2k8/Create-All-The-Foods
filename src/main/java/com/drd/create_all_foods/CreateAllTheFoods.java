@@ -2,9 +2,11 @@ package com.drd.create_all_foods;
 
 import com.drd.create_all_foods.datagen.*;
 import com.drd.create_all_foods.init.*;
+import com.drd.create_all_foods.util.ModWoodTypes;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -36,6 +38,7 @@ public class CreateAllTheFoods {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModTabs.register(modEventBus);
 
@@ -63,6 +66,8 @@ public class CreateAllTheFoods {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_SAPLING.get(), RenderType.cutoutMipped());
+
+            Sheets.addWoodType(ModWoodTypes.CINNAMON);
         }
 
         @SubscribeEvent
@@ -96,6 +101,7 @@ public class CreateAllTheFoods {
             generator.addProvider(event.includeServer(), new ModRecipeGenerator(packOutput));
             generator.addProvider(event.includeServer(), ModLootTableGenerator.create(packOutput));
             generator.addProvider(event.includeServer(), new ModWorldGenerator(packOutput, lookupProvider));
+            generator.addProvider(event.includeServer(), new ModBiomeTagGenerator(packOutput, lookupProvider, existingFileHelper));
 
             ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                     new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));

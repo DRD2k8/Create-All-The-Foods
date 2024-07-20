@@ -3,6 +3,7 @@ package com.drd.create_all_foods.datagen;
 import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
+import com.drd.create_all_foods.init.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -61,5 +62,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.WOODEN_BUTTONS)
                 .add(ModBlocks.CINNAMON_BUTTON.get().asItem());
+
+        this.tag(ModItemTags.CINNAMON)
+                .add(ModItems.CINNAMON.get());
+
+        this.tag(ItemTags.SIGNS)
+                .add(ModItems.CINNAMON_SIGN.get());
+
+        this.tag(ItemTags.HANGING_SIGNS)
+                .add(ModItems.CINNAMON_HANGING_SIGN.get());
     }
 }
