@@ -1,0 +1,8 @@
+// 1.20.1	2024-07-20T11:01:48.7082634	Loot Tables
+24ce7b2f027e086cf8dd44f90eb994278301e8b5 data/create_all_foods/loot_tables/blocks/cinnamon_leaves.json
+3e6fca97eef9a38066bdd51b1d525c81961799b9 data/create_all_foods/loot_tables/blocks/cinnamon_log.json
+7cd0c028d64c5e80ba9bc19ccc35dd812910f388 data/create_all_foods/loot_tables/blocks/cinnamon_planks.json
+404a843087e16d5111b3379a705ae3a7b9c9f305 data/create_all_foods/loot_tables/blocks/cinnamon_sapling.json
+07c3bec438631cb429da058fb87a75e8878ede3f data/create_all_foods/loot_tables/blocks/cinnamon_wood.json
+7e8a44c43d72447a520c9bf25e3501ea39edbd92 data/create_all_foods/loot_tables/blocks/stripped_cinnamon_log.json
+ec50768492c3315432c5a6eb53ba11824a0aa509 data/create_all_foods/loot_tables/blocks/stripped_cinnamon_wood.json

@@ -1,0 +1,11 @@
+{
+  "block.create_all_foods.cinnamon_log": "Cinnamon Log",
+  "block.create_all_foods.cinnamon_wood": "Cinnamon Wood",
+  "block.create_all_foods.stripped_cinnamon_log": "Stripped Cinnamon Log",
+  "block.create_all_foods.stripped_cinnamon_wood": "Stripped Cinnamon Wood",
+  "block.create_all_foods.cinnamon_planks": "Cinnamon Planks",
+  "block.create_all_foods.cinnamon_leaves": "Cinnamon Leaves",
+  "block.create_all_foods.cinnamon_sapling": "Cinnamon Sapling",
+
+  "itemGroup.create_all_foods": "Create: All the Foods"
+}

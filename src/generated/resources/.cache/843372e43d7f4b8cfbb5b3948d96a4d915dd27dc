@@ -1,0 +1,6 @@
+// 1.20.1	2024-07-20T11:01:48.715427	Tags for minecraft:item mod id create_all_foods
+dc59ed64bdfb3aee536b47be3d69dd70102b9dc9 data/create_all_foods/tags/items/cinnamon_logs.json
+a885eb8584b81f42893f033bef79a7b0d152abe6 data/minecraft/tags/items/leaves.json
+3f2e59d35391e15c834d2c95a8f7d553a75c2861 data/minecraft/tags/items/logs_that_burn.json
+08ff28ac3dc1a740b38eca983d3d4a2294df911e data/minecraft/tags/items/planks.json
+a9cc61306ca86912b1c090fb4b030e4d31942c95 data/minecraft/tags/items/saplings.json

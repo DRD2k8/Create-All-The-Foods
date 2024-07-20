@@ -1,0 +1,8 @@
+{
+  "values": [
+    "create_all_foods:cinnamon_log",
+    "create_all_foods:cinnamon_wood",
+    "create_all_foods:stripped_cinnamon_log",
+    "create_all_foods:stripped_cinnamon_wood"
+  ]
+}

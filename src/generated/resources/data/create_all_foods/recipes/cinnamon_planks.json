@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "create_all_foods:cinnamon_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "create_all_foods:cinnamon_planks"
+  }
+}
