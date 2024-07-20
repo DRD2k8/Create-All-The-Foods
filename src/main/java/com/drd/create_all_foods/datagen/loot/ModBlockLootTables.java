@@ -20,6 +20,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_CINNAMON_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CINNAMON_WOOD.get());
         this.dropSelf(ModBlocks.CINNAMON_PLANKS.get());
+        this.dropSelf(ModBlocks.CINNAMON_STAIRS.get());
+        this.dropSelf(ModBlocks.CINNAMON_FENCE.get());
+        this.dropSelf(ModBlocks.CINNAMON_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CINNAMON_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CINNAMON_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CINNAMON_BUTTON.get());
+        this.add(ModBlocks.CINNAMON_SLAB.get(), block ->
+                createSlabItemTable(ModBlocks.CINNAMON_SLAB.get()));
+        this.add(ModBlocks.CINNAMON_DOOR.get(), block ->
+                createDoorTable(ModBlocks.CINNAMON_DOOR.get()));
         this.add(ModBlocks.CINNAMON_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CINNAMON_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModBlocks.CINNAMON_SAPLING.get());

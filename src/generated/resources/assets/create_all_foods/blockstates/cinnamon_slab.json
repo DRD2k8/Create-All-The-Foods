@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "create_all_foods:block/cinnamon_slab"
+    },
+    "type=double": {
+      "model": "create_all_foods:block/cinnamon_planks"
+    },
+    "type=top": {
+      "model": "create_all_foods:block/cinnamon_slab_top"
+    }
+  }
+}

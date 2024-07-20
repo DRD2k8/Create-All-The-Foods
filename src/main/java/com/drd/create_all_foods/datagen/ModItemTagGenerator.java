@@ -37,5 +37,29 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.CINNAMON_SAPLING.get().asItem());
+
+        this.tag(ItemTags.WOODEN_STAIRS)
+                .add(ModBlocks.CINNAMON_STAIRS.get().asItem());
+
+        this.tag(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.CINNAMON_SLAB.get().asItem());
+
+        this.tag(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.CINNAMON_FENCE.get().asItem());
+
+        this.tag(ItemTags.FENCE_GATES)
+                .add(ModBlocks.CINNAMON_FENCE_GATE.get().asItem());
+
+        this.tag(ItemTags.WOODEN_DOORS)
+                .add(ModBlocks.CINNAMON_DOOR.get().asItem());
+
+        this.tag(ItemTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.CINNAMON_TRAPDOOR.get().asItem());
+
+        this.tag(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.CINNAMON_PRESSURE_PLATE.get().asItem());
+
+        this.tag(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.CINNAMON_BUTTON.get().asItem());
     }
 }

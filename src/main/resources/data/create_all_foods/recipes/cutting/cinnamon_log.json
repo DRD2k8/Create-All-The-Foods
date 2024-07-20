@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "create_all_foods:cinnamon_log"
+    }
+  ],
+  "result": [
+    {
+      "item": "create_all_foods:stripped_cinnamon_log"
+    },
+    {
+      "item": "create_all_foods:cinnamon"
+    }
+  ],
+  "sound": "minecraft:item.axe.strip",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_strip"
+  }
+}

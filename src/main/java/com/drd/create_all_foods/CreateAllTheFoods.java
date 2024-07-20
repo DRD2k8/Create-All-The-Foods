@@ -1,9 +1,7 @@
 package com.drd.create_all_foods;
 
 import com.drd.create_all_foods.datagen.*;
-import com.drd.create_all_foods.init.ModBlocks;
-import com.drd.create_all_foods.init.ModItems;
-import com.drd.create_all_foods.init.ModTabs;
+import com.drd.create_all_foods.init.*;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;

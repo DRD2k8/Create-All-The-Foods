@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "create_all_foods:cinnamon_planks"
+    }
+  ],
+  "result": {
+    "item": "create_all_foods:cinnamon_button"
+  }
+}

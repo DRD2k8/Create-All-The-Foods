@@ -2,6 +2,7 @@ package com.drd.create_all_foods.datagen;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.init.ModBlocks;
+import com.drd.create_all_foods.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -18,11 +19,19 @@ public class ModItemModelGenerator extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ModItems.CINNAMON);
         simpleBlockItem(ModBlocks.CINNAMON_LOG);
         simpleBlockItem(ModBlocks.CINNAMON_WOOD);
         simpleBlockItem(ModBlocks.STRIPPED_CINNAMON_LOG);
         simpleBlockItem(ModBlocks.STRIPPED_CINNAMON_WOOD);
         simpleBlockItem(ModBlocks.CINNAMON_LEAVES);
+        simpleBlockItem(ModBlocks.CINNAMON_STAIRS);
+        simpleBlockItem(ModBlocks.CINNAMON_SLAB);
+        blockWithInventoryItem(ModBlocks.CINNAMON_FENCE);
+        simpleBlockItem(ModBlocks.CINNAMON_FENCE_GATE);
+        trapdoorItem(ModBlocks.CINNAMON_TRAPDOOR);
+        simpleBlockItem(ModBlocks.CINNAMON_PRESSURE_PLATE);
+        blockWithInventoryItem(ModBlocks.CINNAMON_BUTTON);
         simplerBlockItem(ModBlocks.CINNAMON_SAPLING);
     }
 
@@ -41,5 +50,15 @@ public class ModItemModelGenerator extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(CreateAllTheFoods.MOD_ID,"block/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder blockWithInventoryItem(RegistryObject<Block> blockItem) {
+        return withExistingParent(blockItem.getId().getPath(),
+                new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/" + blockItem.getId().getPath() + "_inventory"));
+    }
+
+    private ItemModelBuilder trapdoorItem(RegistryObject<Block> blockItem) {
+        return withExistingParent(blockItem.getId().getPath(),
+                new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/" + blockItem.getId().getPath() + "_bottom"));
     }
 }

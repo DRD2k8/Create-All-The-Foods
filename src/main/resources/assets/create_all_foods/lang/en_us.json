@@ -4,8 +4,17 @@
   "block.create_all_foods.stripped_cinnamon_log": "Stripped Cinnamon Log",
   "block.create_all_foods.stripped_cinnamon_wood": "Stripped Cinnamon Wood",
   "block.create_all_foods.cinnamon_planks": "Cinnamon Planks",
+  "block.create_all_foods.cinnamon_stairs": "Cinnamon Stairs",
+  "block.create_all_foods.cinnamon_slab": "Cinnamon Slab",
+  "block.create_all_foods.cinnamon_fence": "Cinnamon Fence",
+  "block.create_all_foods.cinnamon_fence_gate": "Cinnamon Fence Gate",
+  "block.create_all_foods.cinnamon_door": "Cinnamon Door",
+  "block.create_all_foods.cinnamon_trapdoor": "Cinnamon Trapdoor",
+  "block.create_all_foods.cinnamon_pressure_plate": "Cinnamon Pressure Plate",
+  "block.create_all_foods.cinnamon_button": "Cinnamon Button",
   "block.create_all_foods.cinnamon_leaves": "Cinnamon Leaves",
   "block.create_all_foods.cinnamon_sapling": "Cinnamon Sapling",
+  "item.create_all_foods.cinnamon": "Cinnamon",
 
   "itemGroup.create_all_foods": "Create: All the Foods"
 }

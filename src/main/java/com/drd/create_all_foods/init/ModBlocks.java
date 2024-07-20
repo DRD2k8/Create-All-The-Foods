@@ -4,15 +4,16 @@ import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.block.CinnamonWoodBlock;
 import com.drd.create_all_foods.worldgen.tree.CinnamonTreeGrower;
 import net.minecraft.core.Direction;
+import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SaplingBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -36,6 +37,23 @@ public class ModBlocks {
             () -> new CinnamonWoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(MapColor.COLOR_ORANGE).sound(SoundType.CHERRY_WOOD)));
     public static final RegistryObject<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_ORANGE).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> CINNAMON_STAIRS = registerBlock("cinnamon_stairs",
+            () -> new StairBlock(CINNAMON_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_ORANGE).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> CINNAMON_SLAB = registerBlock("cinnamon_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(MapColor.COLOR_ORANGE).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> CINNAMON_FENCE = registerBlock("cinnamon_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD)));
+    public static final RegistryObject<Block> CINNAMON_FENCE_GATE = registerBlock("cinnamon_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), WoodType.CHERRY));
+    public static final RegistryObject<Block> CINNAMON_DOOR = registerBlock("cinnamon_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY));
+    public static final RegistryObject<Block> CINNAMON_TRAPDOOR = registerBlock("cinnamon_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY));
+    public static final RegistryObject<Block> CINNAMON_PRESSURE_PLATE = registerBlock("cinnamon_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY));
+    public static final RegistryObject<Block> CINNAMON_BUTTON = registerBlock("cinnamon_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(CINNAMON_PLANKS.get().defaultMapColor()).sound(SoundType.CHERRY_WOOD), BlockSetType.CHERRY, 30, true));
     public static final RegistryObject<Block> CINNAMON_LEAVES = registerBlock("cinnamon_leaves",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.CHERRY_LEAVES)));
     public static final RegistryObject<Block> CINNAMON_SAPLING = registerBlock("cinnamon_sapling",
