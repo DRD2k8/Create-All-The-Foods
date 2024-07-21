@@ -53,6 +53,8 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.CINNAMON_BUTTON.get());
                         pOutput.accept(ModItems.CINNAMON_SIGN.get());
                         pOutput.accept(ModItems.CINNAMON_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.CINNAMON_BOAT.get());
+                        pOutput.accept(ModItems.CINNAMON_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.CINNAMON_LEAVES.get());
                         pOutput.accept(ModBlocks.CINNAMON_SAPLING.get());
                     })

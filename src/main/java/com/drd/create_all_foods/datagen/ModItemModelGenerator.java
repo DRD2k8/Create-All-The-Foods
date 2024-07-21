@@ -57,6 +57,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         blockWithInventoryItem(ModBlocks.CINNAMON_BUTTON);
         simpleItem(ModItems.CINNAMON_SIGN);
         simpleItem(ModItems.CINNAMON_HANGING_SIGN);
+        simpleItem(ModItems.CINNAMON_BOAT);
+        simpleItem(ModItems.CINNAMON_CHEST_BOAT);
         simplerBlockItem(ModBlocks.CINNAMON_SAPLING);
     }
 

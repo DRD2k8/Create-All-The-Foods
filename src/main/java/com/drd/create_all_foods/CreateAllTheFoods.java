@@ -1,5 +1,6 @@
 package com.drd.create_all_foods;
 
+import com.drd.create_all_foods.client.renderer.entity.CustomBoatRenderer;
 import com.drd.create_all_foods.datagen.*;
 import com.drd.create_all_foods.init.*;
 import com.drd.create_all_foods.util.ModWoodTypes;
@@ -7,6 +8,7 @@ import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -39,6 +41,7 @@ public class CreateAllTheFoods {
 
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModTabs.register(modEventBus);
 
@@ -68,6 +71,9 @@ public class CreateAllTheFoods {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CINNAMON_SAPLING.get(), RenderType.cutoutMipped());
 
             Sheets.addWoodType(ModWoodTypes.CINNAMON);
+
+            EntityRenderers.register(ModEntities.BOAT.get(), pContext -> new CustomBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.CHEST_BOAT.get(), pContext -> new CustomBoatRenderer(pContext, true));
         }
 
         @SubscribeEvent

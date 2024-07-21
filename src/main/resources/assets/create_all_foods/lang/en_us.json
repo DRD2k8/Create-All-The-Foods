@@ -19,6 +19,8 @@
   "block.create_all_foods.cinnamon_leaves": "Cinnamon Leaves",
   "block.create_all_foods.cinnamon_sapling": "Cinnamon Sapling",
   "item.create_all_foods.cinnamon": "Cinnamon",
+  "item.create_all_foods.cinnamon_boat": "Cinnamon Boat",
+  "item.create_all_foods.cinnamon_chest_boat": "Cinnamon Boat with Chest",
   "item.create_all_foods.raw_plain_roll": "Raw Plain Roll",
   "item.create_all_foods.plain_roll": "Plain Roll",
   "item.create_all_foods.cinnamon_roll": "Cinnamon Roll",
@@ -43,5 +45,8 @@
   "item.create_all_foods.incomplete_ruby_chocolate_smore": "Incomplete Ruby Chocolate S'more",
   "item.create_all_foods.ruby_chocolate_smore": "Ruby Chocolate S'more",
 
-  "itemGroup.create_all_foods": "Create: All the Foods"
+  "itemGroup.create_all_foods": "Create: All the Foods",
+
+  "entity.create_all_foods.boat": "Boat",
+  "entity.create_all_foods.chest_boat": "Boat with Chest"
 }

@@ -1,6 +1,8 @@
-// 1.20.1	2024-07-20T16:42:47.7395788	Tags for minecraft:item mod id create_all_foods
+// 1.20.1	2024-07-21T13:50:42.9625081	Tags for minecraft:item mod id create_all_foods
 dc59ed64bdfb3aee536b47be3d69dd70102b9dc9 data/create_all_foods/tags/items/cinnamon_logs.json
 666a533ffd1e53ca35c9103a42473dd5eb6cfd75 data/forge/tags/items/cinnamon.json
+5360f903223d3cf0201eacf09da59ec1005ebc04 data/minecraft/tags/items/boats.json
+1463ed876f393f2d5769aaf45f15d04f6ecb94c9 data/minecraft/tags/items/chest_boats.json
 84154562b9c62fe9de419bf3485e9f2d825f6d20 data/minecraft/tags/items/fence_gates.json
 6b24b96fb8f75271f66286e72c9e37017c0596d2 data/minecraft/tags/items/hanging_signs.json
 a885eb8584b81f42893f033bef79a7b0d152abe6 data/minecraft/tags/items/leaves.json

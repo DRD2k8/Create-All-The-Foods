@@ -119,8 +119,22 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .pattern("###")
                 .define('#', ModBlocks.STRIPPED_CINNAMON_LOG.get())
                 .define('X', Items.CHAIN)
-                .unlockedBy(getHasName(ModBlocks.CINNAMON_PLANKS.get()), has(ModBlocks.CINNAMON_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_CINNAMON_LOG.get()), has(ModBlocks.STRIPPED_CINNAMON_LOG.get()))
                 .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CINNAMON_BOAT.get())
+                .pattern("# #")
+                .pattern("###")
+                .define('#', ModBlocks.CINNAMON_PLANKS.get())
+                .unlockedBy(getHasName(ModBlocks.CINNAMON_PLANKS.get()), has(ModBlocks.CINNAMON_PLANKS.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CINNAMON_CHEST_BOAT.get())
+                .requires(ModItems.CINNAMON_BOAT.get())
+                .requires(Tags.Items.CHESTS_WOODEN)
+                .unlockedBy(getHasName(ModItems.CINNAMON_BOAT.get()), has(ModItems.CINNAMON_BOAT.get()))
+                .unlockedBy(getHasName(Items.CHEST), has(Tags.Items.CHESTS_WOODEN))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_PLAIN_ROLL.get())

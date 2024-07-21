@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chain": {
+    "has_cinnamon_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:chain"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_stripped_cinnamon_log": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "create_all_foods:stripped_cinnamon_log"
+              "create_all_foods:cinnamon_planks"
             ]
           }
         ]
@@ -27,21 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "create_all_foods:cinnamon_hanging_sign"
+        "recipe": "create_all_foods:cinnamon_boat"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stripped_cinnamon_log",
-      "has_chain",
+      "has_cinnamon_planks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "create_all_foods:cinnamon_hanging_sign"
+      "create_all_foods:cinnamon_boat"
     ]
   },
   "sends_telemetry_event": false

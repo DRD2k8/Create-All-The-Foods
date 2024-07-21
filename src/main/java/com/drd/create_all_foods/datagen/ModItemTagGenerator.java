@@ -71,5 +71,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.HANGING_SIGNS)
                 .add(ModItems.CINNAMON_HANGING_SIGN.get());
+
+        this.tag(ItemTags.BOATS)
+                .add(ModItems.CINNAMON_BOAT.get());
+
+        this.tag(ItemTags.CHEST_BOATS)
+                .add(ModItems.CINNAMON_CHEST_BOAT.get());
     }
 }

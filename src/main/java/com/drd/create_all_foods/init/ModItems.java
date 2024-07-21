@@ -1,6 +1,8 @@
 package com.drd.create_all_foods.init;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
+import com.drd.create_all_foods.entity.CustomBoat;
+import com.drd.create_all_foods.item.CustomBoatItem;
 import com.drd.create_all_foods.util.ModFoods;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.minecraft.network.chat.Component;
@@ -116,6 +118,11 @@ public class ModItems {
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CINNAMON_SIGN.get(), ModBlocks.CINNAMON_WALL_SIGN.get()));
     public static final RegistryObject<Item> CINNAMON_HANGING_SIGN = ITEMS.register("cinnamon_hanging_sign",
             () -> new HangingSignItem(ModBlocks.CINNAMON_HANGING_SIGN.get(), ModBlocks.CINNAMON_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> CINNAMON_BOAT = ITEMS.register("cinnamon_boat",
+            () -> new CustomBoatItem(false, CustomBoat.Type.CINNAMON, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> CINNAMON_CHEST_BOAT = ITEMS.register("cinnamon_chest_boat",
+            () -> new CustomBoatItem(true, CustomBoat.Type.CINNAMON, new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

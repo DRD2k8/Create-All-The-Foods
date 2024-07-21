@@ -1,11 +1,13 @@
-// 1.20.1	2024-07-20T19:57:46.5187464	Item Models: create_all_foods
+// 1.20.1	2024-07-21T13:50:42.9625081	Item Models: create_all_foods
 be918dcc3f0620e051e41519df16e3532319c271 assets/create_all_foods/models/item/black_chocolate_chip.json
 f23df5326fbc37a2e2bd81d128ff1b006dbc12aa assets/create_all_foods/models/item/black_chocolate_chip_cookie.json
 8715c731cf1804cfb0580ff16ef7f4984ae63e3b assets/create_all_foods/models/item/black_chocolate_smore.json
 98aaf0bf497f395f21788d2a2d265d2662b60518 assets/create_all_foods/models/item/chocolate_chip.json
 87bc6ec4812eb92be60f5135cee1fa4b0e551167 assets/create_all_foods/models/item/chocolate_smore.json
 0a20f81e18dde8fb64c199cd86fcebf32aab9f10 assets/create_all_foods/models/item/cinnamon.json
+2c1d90b29c45cf170287f1d8300670f0a315506b assets/create_all_foods/models/item/cinnamon_boat.json
 88db5642c8222a15f4ae86e5b0ff581a01941d1b assets/create_all_foods/models/item/cinnamon_button.json
+a89c35f00ffdb0c3ecb3f31a85be8162534c4850 assets/create_all_foods/models/item/cinnamon_chest_boat.json
 c7e99aaf4baf9da0d827ecaa647d634adfd37cd1 assets/create_all_foods/models/item/cinnamon_fence.json
 1d88113081378602babdf3dc4ddbd1b72c94284e assets/create_all_foods/models/item/cinnamon_fence_gate.json
 cabda4a3c8afdc6e84d77b5217a9031d89b193fa assets/create_all_foods/models/item/cinnamon_hanging_sign.json
