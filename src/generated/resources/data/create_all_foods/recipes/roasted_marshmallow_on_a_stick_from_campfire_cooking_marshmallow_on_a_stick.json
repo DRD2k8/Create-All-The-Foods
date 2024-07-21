@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "roasted_marshmallow_on_a_stick",
+  "ingredient": {
+    "item": "create_confectionery:marshmallow_on_a_stick"
+  },
+  "result": "create_all_foods:roasted_marshmallow_on_a_stick"
+}

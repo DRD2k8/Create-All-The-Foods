@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_all_foods:plain_roll"
+    },
+    {
+      "fluid": "create_factory:sweet_berries_jam",
+      "nbt": {},
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create_factory:sweet_berries_jam_roll"
+    }
+  ]
+}

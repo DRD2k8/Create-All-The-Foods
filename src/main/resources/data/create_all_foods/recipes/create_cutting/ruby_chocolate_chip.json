@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "create_confectionery:bar_of_ruby_chocolate"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 6,
+      "item": "create_all_foods:ruby_chocolate_chip"
+    }
+  ]
+}

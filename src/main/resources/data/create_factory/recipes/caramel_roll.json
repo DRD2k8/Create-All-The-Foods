@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create_confectionery"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_all_foods:plain_roll"
+    },
+    {
+      "fluid": "create_confectionery:caramel",
+      "nbt": {},
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "create_factory:caramel_roll"
+    }
+  ]
+}

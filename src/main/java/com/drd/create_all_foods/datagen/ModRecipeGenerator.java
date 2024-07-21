@@ -5,6 +5,7 @@ import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
 import com.drd.create_all_foods.init.ModItems;
 import com.simibubi.create.AllItems;
+import net.mcreator.createconfectionery.init.CreateConfectioneryModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -129,9 +130,23 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(AllItems.DOUGH), has(AllItems.DOUGH))
                 .save(consumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get())
+                .requires(ModItems.ROASTED_MARSHMALLOW.get())
+                .requires(ModItems.ROASTED_MARSHMALLOW.get())
+                .requires(Items.STICK)
+                .unlockedBy(getHasName(ModItems.ROASTED_MARSHMALLOW.get()), has(ModItems.ROASTED_MARSHMALLOW.get()))
+                .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                .save(consumer);
+
         oreSmelting(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
         oreSmoking(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
         oreCampfireCooking(consumer, List.of(ModItems.RAW_PLAIN_ROLL.get()), RecipeCategory.FOOD, ModItems.PLAIN_ROLL.get(), 0.35f, 200, "plain_roll");
+        oreSmelting(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW.get(), 0.35f, 200, "roasted_marshmallow");
+        oreSmoking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW.get(), 0.35f, 200, "roasted_marshmallow");
+        oreCampfireCooking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW.get(), 0.35f, 200, "roasted_marshmallow");
+        oreSmelting(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
+        oreSmoking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
+        oreCampfireCooking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_marshmallow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create_confectionery:marshmallow"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create_all_foods:roasted_marshmallow_from_campfire_cooking_marshmallow"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_marshmallow",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create_all_foods:roasted_marshmallow_from_campfire_cooking_marshmallow"
+    ]
+  },
+  "sends_telemetry_event": false
+}

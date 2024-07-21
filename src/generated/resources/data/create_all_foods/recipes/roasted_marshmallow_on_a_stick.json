@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_all_foods:roasted_marshmallow"
+    },
+    {
+      "item": "create_all_foods:roasted_marshmallow"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "create_all_foods:roasted_marshmallow_on_a_stick"
+  }
+}

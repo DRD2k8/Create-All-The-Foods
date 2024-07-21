@@ -1,0 +1,71 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_all_foods:graham_cracker"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "create_all_foods:ruby_chocolate_smore"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_all_foods:graham_cracker"
+        },
+        [
+          {
+            "item": "create_confectionery:bar_of_ruby_chocolate"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create_all_foods:incomplete_ruby_chocolate_smore"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_all_foods:incomplete_ruby_chocolate_smore"
+        },
+        [
+          {
+            "item": "create_all_foods:roasted_marshmallow"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create_all_foods:incomplete_ruby_chocolate_smore"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_all_foods:incomplete_ruby_chocolate_smore"
+        },
+        [
+          {
+            "item": "create_all_foods:graham_cracker"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create_all_foods:ruby_chocolate_smore"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_all_foods:incomplete_ruby_chocolate_smore"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "roasted_marshmallow",
+  "ingredient": {
+    "item": "create_confectionery:marshmallow"
+  },
+  "result": "create_all_foods:roasted_marshmallow"
+}

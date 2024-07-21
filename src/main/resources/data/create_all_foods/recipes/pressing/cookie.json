@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_all_foods:cookie"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:graham_cracker"
+    }
+  ]
+}
