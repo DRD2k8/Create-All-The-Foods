@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:peanut"
+    },
+    {
+      "item": "garnished:peanut"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "create_all_foods:peanut_butter"
+    }
+  ]
+}

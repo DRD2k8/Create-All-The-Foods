@@ -42,6 +42,8 @@ public class CreateAllTheFoods {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
         ModItems.register(modEventBus);
         ModTabs.register(modEventBus);
 

@@ -38,6 +38,7 @@ public class ModTabs {
                         pOutput.accept(ModItems.WHITE_CHOCOLATE_SMORE.get());
                         pOutput.accept(ModItems.BLACK_CHOCOLATE_SMORE.get());
                         pOutput.accept(ModItems.RUBY_CHOCOLATE_SMORE.get());
+                        pOutput.accept(ModItems.PEANUT_BUTTER_BUCKET.get());
                         pOutput.accept(ModBlocks.CINNAMON_LOG.get());
                         pOutput.accept(ModBlocks.CINNAMON_WOOD.get());
                         pOutput.accept(ModBlocks.STRIPPED_CINNAMON_LOG.get());

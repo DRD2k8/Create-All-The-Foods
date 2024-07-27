@@ -60,6 +60,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.CINNAMON_BOAT);
         simpleItem(ModItems.CINNAMON_CHEST_BOAT);
         simplerBlockItem(ModBlocks.CINNAMON_SAPLING);
+        simpleItem(ModItems.PEANUT_BUTTER_BUCKET);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

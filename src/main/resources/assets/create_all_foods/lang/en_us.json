@@ -18,6 +18,7 @@
   "block.create_all_foods.cinnamon_wall_hanging_sign": "Cinnamon Wall Hanging Sign",
   "block.create_all_foods.cinnamon_leaves": "Cinnamon Leaves",
   "block.create_all_foods.cinnamon_sapling": "Cinnamon Sapling",
+  "block.create_all_foods.peanut_butter": "Peanut Butter",
   "item.create_all_foods.cinnamon": "Cinnamon",
   "item.create_all_foods.cinnamon_boat": "Cinnamon Boat",
   "item.create_all_foods.cinnamon_chest_boat": "Cinnamon Boat with Chest",
@@ -44,6 +45,8 @@
   "item.create_all_foods.black_chocolate_smore": "Dark Chocolate S'more",
   "item.create_all_foods.incomplete_ruby_chocolate_smore": "Incomplete Ruby Chocolate S'more",
   "item.create_all_foods.ruby_chocolate_smore": "Ruby Chocolate S'more",
+  "item.create_all_foods.peanut_butter_bucket": "Peanut Butter Bucket",
+  "fluid_type.create_all_foods.peanut_butter": "Peanut Butter",
 
   "itemGroup.create_all_foods": "Create: All the Foods",
 

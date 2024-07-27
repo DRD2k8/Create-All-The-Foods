@@ -164,6 +164,7 @@ dependencies {
     // Optional Mods
     implementation fg.deobf("curse.maven:create-confectionery-531834:4835793")
     implementation fg.deobf("curse.maven:create-factory-623265:5454843")
+    implementation fg.deobf("curse.maven:garnished-923277:5458721")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")

@@ -113,6 +113,9 @@ public class ModItems {
                     list.add(Component.literal("§9Saturation (0:02)"));
                 }
             });
+    public static final RegistryObject<Item> PEANUT_BUTTER_BUCKET = ITEMS.register("peanut_butter_bucket",
+            () -> new BucketItem(ModFluids.PEANUT_BUTTER,
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<Item> CINNAMON_SIGN = ITEMS.register("cinnamon_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CINNAMON_SIGN.get(), ModBlocks.CINNAMON_WALL_SIGN.get()));

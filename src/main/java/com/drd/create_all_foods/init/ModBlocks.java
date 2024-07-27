@@ -65,6 +65,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.CHERRY_LEAVES)));
     public static final RegistryObject<Block> CINNAMON_SAPLING = registerBlock("cinnamon_sapling",
             () -> new SaplingBlock(new CinnamonTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).sound(SoundType.CHERRY_LEAVES)));
+    public static final RegistryObject<LiquidBlock> PEANUT_BUTTER = BLOCKS.register("peanut_butter",
+            () -> new LiquidBlock(ModFluids.PEANUT_BUTTER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
