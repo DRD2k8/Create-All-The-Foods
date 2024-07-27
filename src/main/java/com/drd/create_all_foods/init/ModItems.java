@@ -2,7 +2,7 @@ package com.drd.create_all_foods.init;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.entity.CustomBoat;
-import com.drd.create_all_foods.item.CustomBoatItem;
+import com.drd.create_all_foods.item.*;
 import com.drd.create_all_foods.util.ModFoods;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import net.minecraft.network.chat.Component;
@@ -113,6 +113,88 @@ public class ModItems {
                     list.add(Component.literal("§9Saturation (0:02)"));
                 }
             });
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_CASHEW = ITEMS.register("white_chocolate_glazed_cashew",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_WALNUT = ITEMS.register("white_chocolate_glazed_walnut",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_ALMOND = ITEMS.register("white_chocolate_glazed_almond",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_PECAN = ITEMS.register("white_chocolate_glazed_pecan",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_PISTACHIO = ITEMS.register("white_chocolate_glazed_pistachio",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_MACADAMIA = ITEMS.register("white_chocolate_glazed_macadamia",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_HAZELNUT = ITEMS.register("white_chocolate_glazed_hazelnut",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_PEANUT = ITEMS.register("white_chocolate_glazed_peanut",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_CHESTNUT = ITEMS.register("white_chocolate_glazed_chestnut",
+            () -> new WhiteChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_NUT_MIX = ITEMS.register("white_chocolate_glazed_nut_mix",
+            () -> new WhiteChocolateGlazedNutMixFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_CASHEW = ITEMS.register("black_chocolate_glazed_cashew",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_WALNUT = ITEMS.register("black_chocolate_glazed_walnut",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_ALMOND = ITEMS.register("black_chocolate_glazed_almond",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_PECAN = ITEMS.register("black_chocolate_glazed_pecan",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_PISTACHIO = ITEMS.register("black_chocolate_glazed_pistachio",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_MACADAMIA = ITEMS.register("black_chocolate_glazed_macadamia",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_HAZELNUT = ITEMS.register("black_chocolate_glazed_hazelnut",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_PEANUT = ITEMS.register("black_chocolate_glazed_peanut",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_CHESTNUT = ITEMS.register("black_chocolate_glazed_chestnut",
+            () -> new BlackChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_CHOCOLATE_GLAZED_NUT_MIX = ITEMS.register("black_chocolate_glazed_nut_mix",
+            () -> new BlackChocolateGlazedNutMixFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_CASHEW = ITEMS.register("ruby_chocolate_glazed_cashew",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_WALNUT = ITEMS.register("ruby_chocolate_glazed_walnut",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_ALMOND = ITEMS.register("ruby_chocolate_glazed_almond",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_PECAN = ITEMS.register("ruby_chocolate_glazed_pecan",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_PISTACHIO = ITEMS.register("ruby_chocolate_glazed_pistachio",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_MACADAMIA = ITEMS.register("ruby_chocolate_glazed_macadamia",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_HAZELNUT = ITEMS.register("ruby_chocolate_glazed_hazelnut",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_PEANUT = ITEMS.register("ruby_chocolate_glazed_peanut",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_CHESTNUT = ITEMS.register("ruby_chocolate_glazed_chestnut",
+            () -> new RubyChocolateGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_CHOCOLATE_GLAZED_NUT_MIX = ITEMS.register("ruby_chocolate_glazed_nut_mix",
+            () -> new RubyChocolateGlazedNutMixFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_CASHEW = ITEMS.register("caramel_glazed_cashew",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_WALNUT = ITEMS.register("caramel_glazed_walnut",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_ALMOND = ITEMS.register("caramel_glazed_almond",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_PECAN = ITEMS.register("caramel_glazed_pecan",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_PISTACHIO = ITEMS.register("caramel_glazed_pistachio",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_MACADAMIA = ITEMS.register("caramel_glazed_macadamia",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_HAZELNUT = ITEMS.register("caramel_glazed_hazelnut",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_PEANUT = ITEMS.register("caramel_glazed_peanut",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_CHESTNUT = ITEMS.register("caramel_glazed_chestnut",
+            () -> new CaramelGlazedNutFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_NUT_MIX = ITEMS.register("caramel_glazed_nut_mix",
+            () -> new CaramelGlazedNutMixFoodItem(new Item.Properties()));
+    public static final RegistryObject<Item> PEANUT_BUTTER_ROLL = ITEMS.register("peanut_butter_roll",
+            () -> new Item(new Item.Properties().food(ModFoods.PEANUT_BUTTER_BREAD)));
     public static final RegistryObject<Item> PEANUT_BUTTER_BUCKET = ITEMS.register("peanut_butter_bucket",
             () -> new BucketItem(ModFluids.PEANUT_BUTTER,
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

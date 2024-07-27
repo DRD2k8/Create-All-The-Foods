@@ -4,6 +4,8 @@ import com.drd.create_all_foods.CreateAllTheFoods;
 import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
 import com.drd.create_all_foods.init.ModItems;
+import net.antopfr.create_factory.registry.CFItems;
+import net.mcreator.createconfectionery.init.CreateConfectioneryModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -77,5 +79,67 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.CHEST_BOATS)
                 .add(ModItems.CINNAMON_CHEST_BOAT.get());
+
+        this.tag(ModItemTags.NUTS)
+                .addTag(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
+                .addTag(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
+                .addTag(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
+                .addTag(ModItemTags.CARAMEL_GLAZED_NUTS);
+
+        this.tag(ModItemTags.NUT_MIXES)
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModItems.CARAMEL_GLAZED_NUT_MIX.get());
+
+        this.tag(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModItems.WHITE_CHOCOLATE_GLAZED_CHESTNUT.get());
+
+        this.tag(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModItems.BLACK_CHOCOLATE_GLAZED_CHESTNUT.get());
+
+        this.tag(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModItems.RUBY_CHOCOLATE_GLAZED_CHESTNUT.get());
+
+        this.tag(ModItemTags.CARAMEL_GLAZED_NUTS)
+                .add(ModItems.CARAMEL_GLAZED_CASHEW.get())
+                .add(ModItems.CARAMEL_GLAZED_WALNUT.get())
+                .add(ModItems.CARAMEL_GLAZED_ALMOND.get())
+                .add(ModItems.CARAMEL_GLAZED_PECAN.get())
+                .add(ModItems.CARAMEL_GLAZED_PISTACHIO.get())
+                .add(ModItems.CARAMEL_GLAZED_MACADAMIA.get())
+                .add(ModItems.CARAMEL_GLAZED_PEANUT.get())
+                .add(ModItems.CARAMEL_GLAZED_HAZELNUT.get())
+                .add(ModItems.CARAMEL_GLAZED_CHESTNUT.get());
+
+        this.tag(ModItemTags.GARNISHED_BERRIES)
+                .addOptional(CreateConfectioneryModItems.WHITE_CHOCOLATE_GLAZED_BERRIES.getId())
+                .addOptional(CreateConfectioneryModItems.BLACK_CHOCOLATE_GLAZED_BERRIES.getId())
+                .addOptional(CreateConfectioneryModItems.RUBY_CHOCOLATE_GLAZED_BERRIES.getId())
+                .addOptional(CreateConfectioneryModItems.CARAMEL_GLAZED_BERRIES.getId());
     }
 }

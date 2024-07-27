@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "create_all_foods:white_chocolate_glazed_nuts"
+    },
+    {
+      "tag": "create_all_foods:white_chocolate_glazed_nuts"
+    },
+    {
+      "tag": "garnished:berries"
+    }
+  ],
+  "result": {
+    "item": "create_all_foods:white_chocolate_glazed_nut_mix"
+  }
+}

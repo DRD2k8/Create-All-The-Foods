@@ -16,14 +16,13 @@ public class ModFluidTypes {
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, CreateAllTheFoods.MOD_ID);
 
     public static final RegistryObject<FluidType> PEANUT_BUTTER = registerSolidFluid("peanut_butter",
+            new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/peanut_butter_still"),
+            new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/peanut_butter_flow"),
             FluidType.Properties.create().lightLevel(2).density(50).viscosity(50).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK));
 
-    private static RegistryObject<FluidType> registerSolidFluid(String name, FluidType.Properties properties) {
-        return FLUID_TYPES.register(name, () -> new BaseSolidFluidType(
-                new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/peanut_butter_still"),
-                new ResourceLocation(CreateAllTheFoods.MOD_ID, "block/peanut_butter_flow"),
-                properties));
+    private static RegistryObject<FluidType> registerSolidFluid(String name, final ResourceLocation stillTexture, final ResourceLocation flowingTexture, FluidType.Properties properties) {
+        return FLUID_TYPES.register(name, () -> new BaseSolidFluidType(stillTexture, flowingTexture, properties));
     }
 
     public static void register(IEventBus eventBus) {

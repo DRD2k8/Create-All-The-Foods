@@ -1,0 +1,13 @@
+{
+  "values": [
+    "create_all_foods:white_chocolate_glazed_cashew",
+    "create_all_foods:white_chocolate_glazed_walnut",
+    "create_all_foods:white_chocolate_glazed_almond",
+    "create_all_foods:white_chocolate_glazed_pecan",
+    "create_all_foods:white_chocolate_glazed_pistachio",
+    "create_all_foods:white_chocolate_glazed_macadamia",
+    "create_all_foods:white_chocolate_glazed_peanut",
+    "create_all_foods:white_chocolate_glazed_hazelnut",
+    "create_all_foods:white_chocolate_glazed_chestnut"
+  ]
+}

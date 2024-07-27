@@ -43,6 +43,11 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.BLACK_CHOCOLATE_SMORE);
         simpleItem(ModItems.INCOMPLETE_RUBY_CHOCOLATE_SMORE);
         simpleItem(ModItems.RUBY_CHOCOLATE_SMORE);
+        simpleItem(ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX);
+        simpleItem(ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX);
+        simpleItem(ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX);
+        simpleItem(ModItems.CARAMEL_GLAZED_NUT_MIX);
+        simpleItem(ModItems.PEANUT_BUTTER_ROLL);
         simpleBlockItem(ModBlocks.CINNAMON_LOG);
         simpleBlockItem(ModBlocks.CINNAMON_WOOD);
         simpleBlockItem(ModBlocks.STRIPPED_CINNAMON_LOG);

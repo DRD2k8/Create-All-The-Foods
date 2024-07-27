@@ -1,6 +1,13 @@
-// 1.20.1	2024-07-21T13:50:42.9625081	Tags for minecraft:item mod id create_all_foods
+// 1.20.1	2024-07-27T14:34:08.2742188	Tags for minecraft:item mod id create_all_foods
+5af849a9d1315237ae1bc31df9721f4a9f778769 data/create_all_foods/tags/items/black_chocolate_glazed_nuts.json
+fec9a15625aeacc0f845529e4c51c082778558d8 data/create_all_foods/tags/items/caramel_glazed_nuts.json
 dc59ed64bdfb3aee536b47be3d69dd70102b9dc9 data/create_all_foods/tags/items/cinnamon_logs.json
+af383624cdf124dc71afc47ee04bbcc74389b7e3 data/create_all_foods/tags/items/ruby_chocolate_glazed_nuts.json
+5e8724bcb42f93e721d6e115ae2b87a39749b168 data/create_all_foods/tags/items/white_chocolate_glazed_nuts.json
 666a533ffd1e53ca35c9103a42473dd5eb6cfd75 data/forge/tags/items/cinnamon.json
+cd5f1362590c58426a6009d6a3b9ccbcd5895790 data/garnished/tags/items/berries.json
+c423341473ff50de7c6482618910c3a97631b100 data/garnished/tags/items/nuts.json
+42438ab5f853a84063d6bd72a752beead6a6aabe data/garnished/tags/items/nut_mix.json
 5360f903223d3cf0201eacf09da59ec1005ebc04 data/minecraft/tags/items/boats.json
 1463ed876f393f2d5769aaf45f15d04f6ecb94c9 data/minecraft/tags/items/chest_boats.json
 84154562b9c62fe9de419bf3485e9f2d825f6d20 data/minecraft/tags/items/fence_gates.json

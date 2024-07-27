@@ -4,6 +4,7 @@ import com.drd.create_all_foods.init.ModBlocks;
 import com.drd.create_all_foods.init.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -42,6 +43,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CINNAMON_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CINNAMON_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModBlocks.CINNAMON_SAPLING.get());
+
+        // These loot tables are required by datagen for some reason
+        this.dropOther(ModBlocks.PEANUT_BUTTER.get(), Items.AIR);
     }
 
     @Override

@@ -161,6 +161,34 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmelting(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
         oreSmoking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
         oreCampfireCooking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.GARNISHED_BERRIES)
+                .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .requires(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.GARNISHED_BERRIES)
+                .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .requires(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
+                .requires(ModItemTags.GARNISHED_BERRIES)
+                .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CARAMEL_GLAZED_NUT_MIX.get())
+                .requires(ModItemTags.CARAMEL_GLAZED_NUTS)
+                .requires(ModItemTags.CARAMEL_GLAZED_NUTS)
+                .requires(ModItemTags.GARNISHED_BERRIES)
+                .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

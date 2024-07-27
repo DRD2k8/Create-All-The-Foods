@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-20T16:42:47.7375795	Loot Tables
+// 1.20.1	2024-07-27T14:04:57.2365173	Loot Tables
 7c31bdca50cd9c56ba4b0a53d2df83a100cd1fd5 data/create_all_foods/loot_tables/blocks/cinnamon_button.json
 cfee59d272b54a53535d876b0dc789b4a627b797 data/create_all_foods/loot_tables/blocks/cinnamon_door.json
 e9870c45800c73dffdd2e4160925cd1ab737e307 data/create_all_foods/loot_tables/blocks/cinnamon_fence.json
@@ -16,5 +16,6 @@ a85330dd9a3e43d0ed1814aa9784aeb4ca145227 data/create_all_foods/loot_tables/block
 59238896b94d5aff7f9a8c1c9b9faa7cdeae5a8e data/create_all_foods/loot_tables/blocks/cinnamon_wall_hanging_sign.json
 77cea4656132f8d0a9cb4099dd0e7bfa0bc5c1b6 data/create_all_foods/loot_tables/blocks/cinnamon_wall_sign.json
 07c3bec438631cb429da058fb87a75e8878ede3f data/create_all_foods/loot_tables/blocks/cinnamon_wood.json
+88cb25518451d56bb7c24fc6b32516c761fb3562 data/create_all_foods/loot_tables/blocks/peanut_butter.json
 7e8a44c43d72447a520c9bf25e3501ea39edbd92 data/create_all_foods/loot_tables/blocks/stripped_cinnamon_log.json
 ec50768492c3315432c5a6eb53ba11824a0aa509 data/create_all_foods/loot_tables/blocks/stripped_cinnamon_wood.json
