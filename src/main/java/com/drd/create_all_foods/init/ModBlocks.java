@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +25,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateAllTheFoods.MOD_ID);
 
+    public static final RegistryObject<Block> CAKE = registerBlock("cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.of().forceSolidOn().strength(0.5F).sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CINNAMON_LOG = registerBlock("cinnamon_log",
             () -> new CinnamonWoodBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) -> {
                 return p_152624_.getValue(CinnamonWoodBlock.AXIS) == Direction.Axis.Y ? MapColor.COLOR_ORANGE : MapColor.PODZOL;

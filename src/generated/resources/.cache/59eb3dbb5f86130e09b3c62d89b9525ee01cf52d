@@ -1,4 +1,5 @@
-// 1.20.1	2024-07-27T14:04:57.2365173	Loot Tables
+// 1.20.1	2024-07-27T19:03:25.618853	Loot Tables
+a66d53a9d248e0ed196c2cbf03b4a42da1e66db5 data/create_all_foods/loot_tables/blocks/cake.json
 7c31bdca50cd9c56ba4b0a53d2df83a100cd1fd5 data/create_all_foods/loot_tables/blocks/cinnamon_button.json
 cfee59d272b54a53535d876b0dc789b4a627b797 data/create_all_foods/loot_tables/blocks/cinnamon_door.json
 e9870c45800c73dffdd2e4160925cd1ab737e307 data/create_all_foods/loot_tables/blocks/cinnamon_fence.json

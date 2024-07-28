@@ -162,6 +162,12 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmoking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
         oreCampfireCooking(consumer, List.of(CreateConfectioneryModItems.MARSHMALLOW_ON_A_STICK.get()), RecipeCategory.FOOD, ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), 0.35f, 200, "roasted_marshmallow_on_a_stick");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.CAKE)
+                .requires(ModBlocks.CAKE.get())
+                .requires(Items.SWEET_BERRIES)
+                .unlockedBy(getHasName(ModBlocks.CAKE.get()), has(ModBlocks.CAKE.get()))
+                .save(consumer, "sweet_berry_cake");
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
                 .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)

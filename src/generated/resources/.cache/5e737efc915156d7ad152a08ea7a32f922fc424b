@@ -1,8 +1,9 @@
-// 1.20.1	2024-07-27T15:04:07.8434037	Item Models: create_all_foods
+// 1.20.1	2024-07-27T18:52:52.6354558	Item Models: create_all_foods
 be918dcc3f0620e051e41519df16e3532319c271 assets/create_all_foods/models/item/black_chocolate_chip.json
 f23df5326fbc37a2e2bd81d128ff1b006dbc12aa assets/create_all_foods/models/item/black_chocolate_chip_cookie.json
 fb3ef2a77419f77c040a96c14c4c7fd17c452769 assets/create_all_foods/models/item/black_chocolate_glazed_nut_mix.json
 8715c731cf1804cfb0580ff16ef7f4984ae63e3b assets/create_all_foods/models/item/black_chocolate_smore.json
+31e284d58a5f117fc3658e58d76d93ef660640f9 assets/create_all_foods/models/item/cake.json
 dedba96a672ef8ffae712aaffb854e60413701ba assets/create_all_foods/models/item/caramel_glazed_nut_mix.json
 98aaf0bf497f395f21788d2a2d265d2662b60518 assets/create_all_foods/models/item/chocolate_chip.json
 87bc6ec4812eb92be60f5135cee1fa4b0e551167 assets/create_all_foods/models/item/chocolate_smore.json

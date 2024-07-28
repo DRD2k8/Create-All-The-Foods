@@ -1,0 +1,4 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "create_all_foods:blocks/cake"
+}

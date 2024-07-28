@@ -43,6 +43,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.BLACK_CHOCOLATE_SMORE);
         simpleItem(ModItems.INCOMPLETE_RUBY_CHOCOLATE_SMORE);
         simpleItem(ModItems.RUBY_CHOCOLATE_SMORE);
+        evenSimplerBlockItem(ModBlocks.CAKE);
         simpleItem(ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX);
         simpleItem(ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX);
         simpleItem(ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX);
@@ -83,6 +84,12 @@ public class ModItemModelGenerator extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(CreateAllTheFoods.MOD_ID,"block/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder evenSimplerBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(CreateAllTheFoods.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder blockWithInventoryItem(RegistryObject<Block> blockItem) {

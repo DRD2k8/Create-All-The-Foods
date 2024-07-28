@@ -38,6 +38,7 @@ public class ModTabs {
                         pOutput.accept(ModItems.WHITE_CHOCOLATE_SMORE.get());
                         pOutput.accept(ModItems.BLACK_CHOCOLATE_SMORE.get());
                         pOutput.accept(ModItems.RUBY_CHOCOLATE_SMORE.get());
+                        pOutput.accept(ModBlocks.CAKE.get());
                         pOutput.accept(ModItems.WHITE_CHOCOLATE_GLAZED_CASHEW.get());
                         pOutput.accept(ModItems.BLACK_CHOCOLATE_GLAZED_CASHEW.get());
                         pOutput.accept(ModItems.RUBY_CHOCOLATE_GLAZED_CASHEW.get());

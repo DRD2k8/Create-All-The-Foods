@@ -162,6 +162,7 @@ dependencies {
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
 
     // Optional Mods
+    implementation fg.deobf("curse.maven:createaddition-439890:5535846")
     implementation fg.deobf("curse.maven:create-confectionery-531834:4835793")
     implementation fg.deobf("curse.maven:create-factory-623265:5454843")
     implementation fg.deobf("curse.maven:garnished-923277:5458721")
