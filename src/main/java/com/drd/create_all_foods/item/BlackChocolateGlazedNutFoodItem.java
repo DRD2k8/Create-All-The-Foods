@@ -1,5 +1,6 @@
 package com.drd.create_all_foods.item;
 
+import com.drd.create_all_foods.compat.create_confectionery.util.ModCreateConfectioneryFoods;
 import com.drd.create_all_foods.util.ModFoods;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -14,7 +15,7 @@ import java.util.List;
 
 public class BlackChocolateGlazedNutFoodItem extends Item {
     public BlackChocolateGlazedNutFoodItem(Properties properties) {
-        super(properties.food(ModFoods.BLACK_CHOCOLATE_GLAZED_NUT));
+        super(properties.food(ModCreateConfectioneryFoods.BLACK_CHOCOLATE_GLAZED_NUT));
     }
 
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {

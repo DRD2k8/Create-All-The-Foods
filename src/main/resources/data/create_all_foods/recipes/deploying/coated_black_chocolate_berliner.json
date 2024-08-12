@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_all_foods:black_chocolate_filled_berliner"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:coated_black_chocolate_berliner"
+    }
+  ]
+}

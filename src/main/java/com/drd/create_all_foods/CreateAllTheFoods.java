@@ -1,8 +1,12 @@
 package com.drd.create_all_foods;
 
 import com.drd.create_all_foods.client.renderer.entity.CustomBoatRenderer;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryAndBitterballenItems;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryAndDeepfriedItems;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryItems;
 import com.drd.create_all_foods.datagen.*;
 import com.drd.create_all_foods.init.*;
+import com.drd.create_all_foods.util.ModInfoUtils;
 import com.drd.create_all_foods.util.ModWoodTypes;
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -45,6 +49,15 @@ public class CreateAllTheFoods {
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
         ModItems.register(modEventBus);
+        if (ModInfoUtils.isModLoaded("create_confectionery")) {
+            ModCreateConfectioneryItems.register(modEventBus);
+            if (ModInfoUtils.isModLoaded("create_bic_bit")) {
+                ModCreateConfectioneryAndBitterballenItems.register(modEventBus);
+            }
+            if (ModInfoUtils.isModLoaded("create_deepfried")) {
+                ModCreateConfectioneryAndDeepfriedItems.register(modEventBus);
+            }
+        }
         ModTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading

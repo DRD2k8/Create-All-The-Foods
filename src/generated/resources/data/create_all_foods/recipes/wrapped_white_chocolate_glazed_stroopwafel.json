@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "F": {
+      "item": "create_all_foods:white_chocolate_glazed_stroopwafel"
+    }
+  },
+  "pattern": [
+    "F",
+    "B"
+  ],
+  "result": {
+    "item": "create_all_foods:wrapped_white_chocolate_glazed_stroopwafel"
+  },
+  "show_notification": true
+}

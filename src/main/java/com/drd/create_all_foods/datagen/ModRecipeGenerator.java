@@ -1,6 +1,8 @@
 package com.drd.create_all_foods.datagen;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryAndBitterballenItems;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryItems;
 import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
 import com.drd.create_all_foods.init.ModItems;
@@ -168,32 +170,64 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(ModBlocks.CAKE.get()), has(ModBlocks.CAKE.get()))
                 .save(consumer, "sweet_berry_cake");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
                 .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.GARNISHED_BERRIES)
                 .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
                 .requires(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.GARNISHED_BERRIES)
                 .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
                 .requires(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
                 .requires(ModItemTags.GARNISHED_BERRIES)
                 .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CARAMEL_GLAZED_NUT_MIX.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModCreateConfectioneryItems.CARAMEL_GLAZED_NUT_MIX.get())
                 .requires(ModItemTags.CARAMEL_GLAZED_NUTS)
                 .requires(ModItemTags.CARAMEL_GLAZED_NUTS)
                 .requires(ModItemTags.GARNISHED_BERRIES)
                 .unlockedBy(getHasName(Items.SWEET_BERRIES), has(ModItemTags.GARNISHED_BERRIES))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModCreateConfectioneryAndBitterballenItems.WRAPPED_WHITE_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .pattern("F")
+                .pattern("B")
+                .define('F', ModCreateConfectioneryAndBitterballenItems.WHITE_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .define('B', Items.PAPER)
+                .unlockedBy(getHasName(ModCreateConfectioneryAndBitterballenItems.WHITE_CHOCOLATE_GLAZED_STROOPWAFEL.get()), has(ModCreateConfectioneryAndBitterballenItems.WHITE_CHOCOLATE_GLAZED_STROOPWAFEL.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModCreateConfectioneryAndBitterballenItems.WRAPPED_BLACK_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .pattern("F")
+                .pattern("B")
+                .define('F', ModCreateConfectioneryAndBitterballenItems.BLACK_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .define('B', Items.PAPER)
+                .unlockedBy(getHasName(ModCreateConfectioneryAndBitterballenItems.BLACK_CHOCOLATE_GLAZED_STROOPWAFEL.get()), has(ModCreateConfectioneryAndBitterballenItems.BLACK_CHOCOLATE_GLAZED_STROOPWAFEL.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModCreateConfectioneryAndBitterballenItems.WRAPPED_RUBY_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .pattern("F")
+                .pattern("B")
+                .define('F', ModCreateConfectioneryAndBitterballenItems.RUBY_CHOCOLATE_GLAZED_STROOPWAFEL.get())
+                .define('B', Items.PAPER)
+                .unlockedBy(getHasName(ModCreateConfectioneryAndBitterballenItems.RUBY_CHOCOLATE_GLAZED_STROOPWAFEL.get()), has(ModCreateConfectioneryAndBitterballenItems.RUBY_CHOCOLATE_GLAZED_STROOPWAFEL.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModCreateConfectioneryAndBitterballenItems.WRAPPED_CARAMEL_GLAZED_STROOPWAFEL.get())
+                .pattern("F")
+                .pattern("B")
+                .define('F', ModCreateConfectioneryAndBitterballenItems.CARAMEL_GLAZED_STROOPWAFEL.get())
+                .define('B', Items.PAPER)
+                .unlockedBy(getHasName(ModCreateConfectioneryAndBitterballenItems.CARAMEL_GLAZED_STROOPWAFEL.get()), has(ModCreateConfectioneryAndBitterballenItems.CARAMEL_GLAZED_STROOPWAFEL.get()))
                 .save(consumer);
     }
 

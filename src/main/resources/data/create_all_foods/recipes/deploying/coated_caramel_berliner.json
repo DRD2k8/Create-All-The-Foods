@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_all_foods:caramel_filled_berliner"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:coated_caramel_berliner"
+    }
+  ]
+}

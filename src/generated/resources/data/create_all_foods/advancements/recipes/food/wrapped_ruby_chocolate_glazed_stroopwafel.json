@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ruby_chocolate_glazed_stroopwafel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "create_all_foods:ruby_chocolate_glazed_stroopwafel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create_all_foods:wrapped_ruby_chocolate_glazed_stroopwafel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_ruby_chocolate_glazed_stroopwafel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create_all_foods:wrapped_ruby_chocolate_glazed_stroopwafel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

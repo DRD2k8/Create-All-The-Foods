@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_bic_bit:churros"
+    },
+    {
+      "amount": 250,
+      "fluid": "create_confectionery:white_chocolate",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:white_chocolate_glazed_churros"
+    }
+  ]
+}

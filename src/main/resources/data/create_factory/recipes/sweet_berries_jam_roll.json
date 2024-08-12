@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create_factory"
+    }
+  ],
   "type": "create:filling",
   "ingredients": [
     {

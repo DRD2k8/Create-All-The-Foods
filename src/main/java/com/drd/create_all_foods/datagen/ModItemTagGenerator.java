@@ -1,6 +1,7 @@
 package com.drd.create_all_foods.datagen;
 
 import com.drd.create_all_foods.CreateAllTheFoods;
+import com.drd.create_all_foods.compat.create_confectionery.init.ModCreateConfectioneryItems;
 import com.drd.create_all_foods.datagen.tag.ModItemTags;
 import com.drd.create_all_foods.init.ModBlocks;
 import com.drd.create_all_foods.init.ModItems;
@@ -87,54 +88,54 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModItemTags.CARAMEL_GLAZED_NUTS);
 
         this.tag(ModItemTags.NUT_MIXES)
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
-                .add(ModItems.CARAMEL_GLAZED_NUT_MIX.get());
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_NUT_MIX.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_NUT_MIX.get());
 
         this.tag(ModItemTags.WHITE_CHOCOLATE_GLAZED_NUTS)
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_CASHEW.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_WALNUT.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_ALMOND.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PECAN.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PISTACHIO.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_MACADAMIA.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_PEANUT.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_HAZELNUT.get())
-                .add(ModItems.WHITE_CHOCOLATE_GLAZED_CHESTNUT.get());
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModCreateConfectioneryItems.WHITE_CHOCOLATE_GLAZED_CHESTNUT.get());
 
         this.tag(ModItemTags.BLACK_CHOCOLATE_GLAZED_NUTS)
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_CASHEW.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_WALNUT.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_ALMOND.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PECAN.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PISTACHIO.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_MACADAMIA.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_PEANUT.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_HAZELNUT.get())
-                .add(ModItems.BLACK_CHOCOLATE_GLAZED_CHESTNUT.get());
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModCreateConfectioneryItems.BLACK_CHOCOLATE_GLAZED_CHESTNUT.get());
 
         this.tag(ModItemTags.RUBY_CHOCOLATE_GLAZED_NUTS)
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_CASHEW.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_WALNUT.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_ALMOND.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PECAN.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PISTACHIO.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_MACADAMIA.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_PEANUT.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_HAZELNUT.get())
-                .add(ModItems.RUBY_CHOCOLATE_GLAZED_CHESTNUT.get());
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_CASHEW.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_WALNUT.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_ALMOND.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_PECAN.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_PISTACHIO.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_MACADAMIA.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_PEANUT.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_HAZELNUT.get())
+                .add(ModCreateConfectioneryItems.RUBY_CHOCOLATE_GLAZED_CHESTNUT.get());
 
         this.tag(ModItemTags.CARAMEL_GLAZED_NUTS)
-                .add(ModItems.CARAMEL_GLAZED_CASHEW.get())
-                .add(ModItems.CARAMEL_GLAZED_WALNUT.get())
-                .add(ModItems.CARAMEL_GLAZED_ALMOND.get())
-                .add(ModItems.CARAMEL_GLAZED_PECAN.get())
-                .add(ModItems.CARAMEL_GLAZED_PISTACHIO.get())
-                .add(ModItems.CARAMEL_GLAZED_MACADAMIA.get())
-                .add(ModItems.CARAMEL_GLAZED_PEANUT.get())
-                .add(ModItems.CARAMEL_GLAZED_HAZELNUT.get())
-                .add(ModItems.CARAMEL_GLAZED_CHESTNUT.get());
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_CASHEW.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_WALNUT.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_ALMOND.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_PECAN.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_PISTACHIO.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_MACADAMIA.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_PEANUT.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_HAZELNUT.get())
+                .add(ModCreateConfectioneryItems.CARAMEL_GLAZED_CHESTNUT.get());
 
         this.tag(ModItemTags.GARNISHED_BERRIES)
                 .addOptional(CreateConfectioneryModItems.WHITE_CHOCOLATE_GLAZED_BERRIES.getId())

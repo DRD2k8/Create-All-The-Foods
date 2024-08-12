@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "create_all_foods:item/peanut_butter_apple"
+  }
+}

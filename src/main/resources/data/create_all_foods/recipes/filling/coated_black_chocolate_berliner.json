@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_deepfried:coated_berliner"
+    },
+    {
+      "amount": 250,
+      "fluid": "create_confectionery:black_chocolate",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "create_all_foods:coated_black_chocolate_berliner"
+    }
+  ]
+}
